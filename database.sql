@@ -1,0 +1,9 @@
+CREATE TABLE `auth`.`users` 
+(`id` INT NOT NULL AUTO_INCREMENT , 
+`prenom` VARCHAR(50) NULL DEFAULT NULL , 
+`nom` VARCHAR(50) NOT NULL , 
+`email` VARCHAR(100) NOT NULL , 
+`password` VARCHAR(255) NOT NULL , 
+`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+ PRIMARY KEY (`id`), 
+ UNIQUE `email` (`email`(200))) ENGINE = InnoDB;
